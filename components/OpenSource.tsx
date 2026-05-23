@@ -1,44 +1,48 @@
 "use client";
 
-import { GitMerge, Star } from "lucide-react";
+import { GitMerge } from "lucide-react";
 import { GithubIcon } from "@/components/Icons";
 
 const contributions = [
   {
-    repo: "rails/rails",
-    description: "Contributed documentation improvements and test coverage for ActiveRecord query methods, clarifying edge-case behavior for N+1 detection.",
-    type: "Documentation + Tests",
-    url: "https://github.com/rails/rails",
-    stars: "56k+",
+    repo: "tenet07/rails-ai-toolkit",
+    description: "Production Rails integration layer for multi-provider LLMs: Anthropic, OpenAI, Gemini. Built on ruby_llm with Sidekiq jobs, pgvector RAG, ActionCable streaming, and Redis rate limiting.",
+    type: "New Library",
+    url: "https://github.com/tenet07/rails-ai-toolkit",
+    stars: "Ruby",
     lang: "Ruby",
     langColor: "bg-red-500",
+    own: true,
   },
   {
-    repo: "open-telemetry/opentelemetry-ruby",
-    description: "Added instrumentation examples for Sidekiq and Resque workers, enabling distributed tracing for background job processing in Rails apps.",
-    type: "Feature + Docs",
-    url: "https://github.com/open-telemetry/opentelemetry-ruby",
-    stars: "1.2k+",
+    repo: "tenet07/go-otel-microservices",
+    description: "Go microservices reference with OpenTelemetry + Jaeger distributed tracing, Redis rate limiting at the API gateway layer, gRPC inter-service calls, and Docker Compose.",
+    type: "Reference Architecture",
+    url: "https://github.com/tenet07/go-otel-microservices",
+    stars: "Go",
+    lang: "Go",
+    langColor: "bg-cyan-500",
+    own: true,
+  },
+  {
+    repo: "tenet07/rails-starter-kit",
+    description: "Rails 8 app template with Devise, Pundit, Sidekiq, pgvector, OpenTelemetry, and GitHub Actions CI/CD. Includes a generator that scaffolds AI chat into any model in one command.",
+    type: "App Template",
+    url: "https://github.com/tenet07/rails-starter-kit",
+    stars: "Ruby",
     lang: "Ruby",
     langColor: "bg-red-500",
+    own: true,
   },
   {
-    repo: "pgvector/pgvector",
-    description: "Added ActiveRecord migration examples and Rails integration guide for pgvector, making it easier to bootstrap vector search in Rails apps.",
-    type: "Documentation",
-    url: "https://github.com/pgvector/pgvector",
-    stars: "13k+",
-    lang: "Ruby",
-    langColor: "bg-red-500",
-  },
-  {
-    repo: "alan2207/bulletproof-react",
-    description: "Contributed TypeScript improvements and updated patterns for React Query v5 compatibility in the project-structure reference implementation.",
-    type: "TypeScript + DX",
-    url: "https://github.com/alan2207/bulletproof-react",
-    stars: "29k+",
-    lang: "TypeScript",
-    langColor: "bg-blue-500",
+    repo: "tenet07/SlideBuilder.ai",
+    description: "MCP tool-calling agent that generates PowerPoint decks from YouTube URLs. Uses Claude's tool use to extract key points, structure slides, and output a ready-to-use .pptx file.",
+    type: "MCP Agent",
+    url: "https://github.com/tenet07/SlideBuilder.ai",
+    stars: "Python",
+    lang: "Python",
+    langColor: "bg-yellow-500",
+    own: true,
   },
 ];
 
@@ -46,10 +50,10 @@ export default function OpenSource() {
   return (
     <section id="opensource" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <p className="text-blue-600 text-sm font-semibold uppercase tracking-widest mb-3">Community</p>
-        <h2 className="text-4xl font-bold text-slate-900 mb-4">Open Source Contributions</h2>
+        <p className="text-blue-600 text-sm font-semibold uppercase tracking-widest mb-3">Open Source</p>
+        <h2 className="text-4xl font-bold text-slate-900 mb-4">Public Projects on GitHub</h2>
         <p className="text-slate-500 mb-12 max-w-xl">
-          Contributing back to the tools and communities that made this work possible.
+          Libraries, tools, and reference implementations built around my core stack — free for the community to use and extend.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -68,10 +72,10 @@ export default function OpenSource() {
                     {c.repo}
                   </span>
                 </div>
-                <div className="flex items-center gap-1 text-slate-400 text-xs flex-shrink-0">
-                  <Star size={12} />
-                  <span>{c.stars}</span>
-                </div>
+                <span className="inline-flex items-center gap-1.5 text-xs text-slate-500 flex-shrink-0">
+                  <span className={`w-2 h-2 rounded-full ${c.langColor}`} />
+                  {c.lang}
+                </span>
               </div>
 
               <p className="text-sm text-slate-600 leading-relaxed mb-4">{c.description}</p>
@@ -80,10 +84,6 @@ export default function OpenSource() {
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-600 text-xs font-medium">
                   <GitMerge size={11} />
                   {c.type}
-                </span>
-                <span className="inline-flex items-center gap-1.5 text-xs text-slate-500">
-                  <span className={`w-2.5 h-2.5 rounded-full ${c.langColor}`} />
-                  {c.lang}
                 </span>
               </div>
             </a>

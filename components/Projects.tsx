@@ -5,64 +5,64 @@ import { GithubIcon } from "@/components/Icons";
 
 const projects = [
   {
-    name: "BudgetlyAI",
+    name: "rails-ai-toolkit",
     description:
-      "AI-powered personal finance tracker with natural language expense logging, smart categorization, and predictive budget insights using LLMs and RAG pipelines.",
-    tags: ["React", "Node.js", "OpenAI API", "PostgreSQL", "RAG"],
-    github: "https://github.com/tenet07/budgetly",
+      "Production-ready Rails integration layer for multi-provider LLMs. Adds ActiveRecord persistence, Sidekiq async jobs, pgvector RAG pipelines, and ActionCable streaming — so you ship AI features like any other Rails feature.",
+    tags: ["Ruby on Rails", "Anthropic", "pgvector", "Sidekiq", "Redis", "MIT"],
+    github: "https://github.com/tenet07/rails-ai-toolkit",
     demo: null,
-    color: "from-emerald-500 to-teal-600",
-    letter: "B",
-  },
-  {
-    name: "Aigile",
-    description:
-      "Agile project management platform with AI-assisted story generation, sprint planning, and automated standup summaries. Built for engineering teams.",
-    tags: ["Ruby on Rails", "React", "Sidekiq", "PostgreSQL", "Claude API"],
-    github: "https://github.com/tenet07/aigile",
-    demo: null,
-    color: "from-blue-500 to-indigo-600",
-    letter: "A",
-  },
-  {
-    name: "LoopCRM",
-    description:
-      "Full-stack CRM platform with pipeline management, contact tracking, email automation via SendGrid, and Zoom integration for sales teams.",
-    tags: ["Ruby on Rails", "React", "SendGrid", "Zoom API", "Redis"],
-    github: "https://github.com/tenet07/loops-crm",
-    demo: null,
-    color: "from-violet-500 to-purple-600",
-    letter: "L",
-  },
-  {
-    name: "RentSight",
-    description:
-      "Real-estate intelligence platform providing rental market analytics, property comparisons, and neighborhood insights for tenants and landlords.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Google Maps API"],
-    github: "https://github.com/tenet07/rent-sight",
-    demo: null,
-    color: "from-orange-500 to-amber-600",
+    color: "from-rose-500 to-pink-600",
     letter: "R",
   },
   {
-    name: "Agent Orchestrator",
+    name: "go-otel-microservices",
     description:
-      "Multi-agent orchestration framework for chaining LLM agents with tool use, memory management, and human-in-the-loop approval workflows.",
-    tags: ["Python", "LangGraph", "LangChain", "OpenAI", "Redis"],
-    github: "https://github.com/tenet07/agent-orchestrator",
+      "Reference Go microservices architecture with full OpenTelemetry observability: distributed tracing via Jaeger, Redis rate limiting at the API Gateway, gRPC service communication, and Docker Compose orchestration.",
+    tags: ["GoLang", "OpenTelemetry", "Jaeger", "gRPC", "Redis", "Docker"],
+    github: "https://github.com/tenet07/go-otel-microservices",
     demo: null,
-    color: "from-rose-500 to-pink-600",
-    letter: "O",
+    color: "from-cyan-500 to-blue-600",
+    letter: "G",
   },
   {
-    name: "Voiceflow Integration",
+    name: "rails-starter-kit",
     description:
-      "Voice-enabled AI assistant platform integrating Voiceflow with custom Rails backend and React frontend for conversational UI workflows.",
-    tags: ["React", "Ruby on Rails", "Voiceflow API", "WebSockets"],
-    github: "https://github.com/tenet07/voiceflow",
+      "One-command Rails 8 template with Devise auth, Pundit, Sidekiq, pgvector, OpenTelemetry, Sentry, Docker Compose, and GitHub Actions CI/CD — plus an AI chat generator that scaffolds LLM features into any model.",
+    tags: ["Ruby on Rails", "Devise", "Sidekiq", "OpenTelemetry", "Docker"],
+    github: "https://github.com/tenet07/rails-starter-kit",
     demo: null,
-    color: "from-sky-500 to-cyan-600",
-    letter: "V",
+    color: "from-violet-500 to-purple-600",
+    letter: "S",
+  },
+  {
+    name: "SlideBuilder.ai",
+    description:
+      "MCP tool-calling agent that generates polished PowerPoint decks from YouTube video URLs. Uses Claude to extract key points, structure slides, and format content automatically.",
+    tags: ["MCP", "Claude API", "Python", "PowerPoint", "Tool Use"],
+    github: "https://github.com/tenet07/SlideBuilder.ai",
+    demo: null,
+    color: "from-amber-500 to-orange-600",
+    letter: "S",
+  },
+  {
+    name: "coding-ninja",
+    description:
+      "Self-paced Go learning platform with structured modules on algorithms, system design, and concurrency. Built to practice production-grade Go patterns beyond toy examples.",
+    tags: ["GoLang", "Algorithms", "System Design", "Concurrency"],
+    github: "https://github.com/tenet07/coding-ninja",
+    demo: null,
+    color: "from-emerald-500 to-teal-600",
+    letter: "C",
+  },
+  {
+    name: "geekbygeeks",
+    description:
+      "Storyteller platform made by and for developers — share engineering stories, lessons learned, and deep dives in a community built around technical craft.",
+    tags: ["JavaScript", "Community", "Dev Platform"],
+    github: "https://github.com/tenet07/geekbygeeks",
+    demo: null,
+    color: "from-indigo-500 to-blue-600",
+    letter: "G",
   },
 ];
 
