@@ -21,8 +21,8 @@ const links = [
   {
     icon: LinkedinIcon,
     label: "LinkedIn",
-    value: "linkedin.com/in/gunjan-solanki",
-    href: "https://linkedin.com/in/gunjan-solanki",
+    value: "linkedin.com/in/gunjan007",
+    href: "https://linkedin.com/in/gunjan007",
     description: "Professional profile",
   },
   {

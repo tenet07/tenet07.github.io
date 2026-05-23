@@ -118,7 +118,7 @@ export default function Hero() {
               <span>tenet07</span>
             </a>
             <a
-              href="https://linkedin.com/in/gunjan-solanki"
+              href="https://linkedin.com/in/gunjan007"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors text-sm"
